@@ -1,0 +1,21 @@
+{
+  "name": "indigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sajjad",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.0.0"
+  },
+  "browser": {
+    "[module-name]": false
+  },
+  "dependencies": {
+    "@cypress/webpack-preprocessor": "^5.11.0",
+    "faker": "^6.6.6"
+  }
+}
