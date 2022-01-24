@@ -35,9 +35,16 @@ let credentials = {
       home_page.deleteTaxProfile()
     })
 
-    it('Verify that user is able to go to Tax Profiles page.', () => {
+    it('Verify that user is able to go to Tax Profiles rate page.', () => {
       cy.visit(`${Cypress.config('baseUrl')}/#/List/00103/QA01/HR/Payroll/TaxProfiles`)
       home_page.goToRatesTab()
   })
+
+  it('Verify that user is able to add new Tax Profiles rate.', () => {
+      cy.visit("https://indigo-testing.shireburn.com/#/List/00103/QA01/HR/Payroll/TaxProfiles/" +  home_page.PROFILE_CODE + "/Rates")
+      home_page.addNewTaxProfileRate()
+      home_page.saveNewProfileRate()
+  })
+
 
  })
